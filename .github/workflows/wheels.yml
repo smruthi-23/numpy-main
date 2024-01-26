@@ -116,7 +116,7 @@ jobs:
           python-version: "3.x"
 
       - name: Build wheels
-        uses: pypa/cibuildwheel@7da7df1efc530f07d1945c00934b8cfd34be0d50 # v2.16.1
+        uses: pypa/cibuildwheel@e250df5d5da8c45226a8de1a80e6bfbbf46f5e4b # v2.16.3
         env:
           CIBW_PRERELEASE_PYTHONS: True
           CIBW_BUILD: ${{ matrix.python }}-${{ matrix.buildplat[1] }}
